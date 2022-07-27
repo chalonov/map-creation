@@ -1,4 +1,4 @@
-
+# Codigo principal, guardar y correr para crear mapa de Colombia con los valores seleccionados
 
 
 source("./code/loadLibraries.R")
