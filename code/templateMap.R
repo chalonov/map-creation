@@ -4,7 +4,7 @@ print('.....creating maps')
 
 Sys.sleep(10)
 
-print('.....waiting')
+print('....waiting')
 
 mapPlot <- tm_shape(shapeMap) + 
   tm_polygons(variableMap, 

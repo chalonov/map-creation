@@ -14,4 +14,4 @@ pacman::p_load(raster,
                leaflet, 
                dplyr)
 
-print('.....loading libraries')
+print('....loading libraries')

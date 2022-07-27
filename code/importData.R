@@ -1,5 +1,5 @@
 # importar datos
-print('.....loading data')
+print('....loading data')
 
 etiquetasExcel <- read_excel('./data/mapasEtiquetas.xlsx')
 
@@ -13,4 +13,4 @@ shapeDEP <- shapeDEP %>%
 
 shapeMap <- inner_join(x = shapeDEP, y = tasasDEP, by = c('ID_ESPACIA' = 'codDepto'))
 
-print('.....data imported')
+print('....data imported')

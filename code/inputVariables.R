@@ -13,4 +13,4 @@ mapTitle = etiquetasExcel$tituloMapa
 legendTitle = etiquetasExcel$tituloLeyenda
 authorCredits = etiquetasExcel$autorCreditos
 
-print('.....reading variables')
+print('....reading variables')
