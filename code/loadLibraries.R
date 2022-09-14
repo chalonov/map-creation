@@ -12,6 +12,8 @@ pacman::p_load(raster,
                tmap, 
                tmaptools,
                leaflet, 
-               dplyr)
+               dplyr,
+               systemfonts,
+               stringr)
 
-print('....loading libraries')
+print('.....loading libraries')

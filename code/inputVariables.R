@@ -8,9 +8,9 @@
 #print('.....reading data')
 
 
-variableMap = etiquetasExcel$variableMapa
-mapTitle = etiquetasExcel$tituloMapa
-legendTitle = etiquetasExcel$tituloLeyenda
-authorCredits = etiquetasExcel$autorCreditos
+variableMap = tagFile$variableMapa
+mapTitle = tagFile$tituloMapa
+legendTitle = tagFile$tituloLeyenda
+authorCredits = tagFile$autorCreditos
 
-print('....reading variables')
+print('.....reading variables')

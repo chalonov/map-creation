@@ -1,3 +1,3 @@
-# Exportar .png file según nombre
+# Exportar .png file
 
-tmap_save(mapPlot, etiquetasExcel$exportFile, width=2200, height=2400, asp=0)
+tmap_save(mapPlot, pngFile$exportFile, width=2000, height=2400, asp=0)

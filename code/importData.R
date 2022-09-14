@@ -1,16 +1,21 @@
 # importar datos
-print('....loading data')
+print('.....loading data')
 
-etiquetasExcel <- read_excel('./data/mapasEtiquetas.xlsx')
+dataFile <- read_excel(pathFile$archivoDatos)
 
-shapeDEP <- st_read('./data/shape/departamentos.shp')
+print('.....loading shape')
+shapeFileDep <- st_read('./data/shape/departamentos.shp')
+shapeFileMun <- st_read('./data/shape/municipios.shp')
 
-tasasDEP <- read_excel(etiquetasExcel$archivoDatos)
-
-shapeDEP <- shapeDEP %>% 
+shapeFileDep <- shapeFileDep %>% 
   mutate(ID_ESPACIA = as.numeric(as.character(ID_ESPACIA)))
+shapeFileMun <- shapeFileMun %>% 
+  mutate(mpios = as.numeric(as.character(mpios)))
 
+if (scopeArea == "departamental") {
+  dataShapeMap = inner_join(x = shapeFileDep, y = dataFile, by = c('ID_ESPACIA' = 'CodDepto'))
+} else if (scopeArea == "municipal") {
+  dataShapeMap = inner_join(x = shapeFileMun, y = dataFile, by = c('mpios' = 'CodMun'))
+}
 
-shapeMap <- inner_join(x = shapeDEP, y = tasasDEP, by = c('ID_ESPACIA' = 'codDepto'))
-
-print('....data imported')
+print('.....data imported')
