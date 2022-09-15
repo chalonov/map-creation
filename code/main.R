@@ -2,7 +2,7 @@
 
 source("./code/loadLibraries.R")
 
-readFile <- read_excel('./data/mapasEtiquetas.xlsx')
+readFile <- read_excel('./data/map_variables.xlsx')
 
 for (i in readFile$item) {
   # crea variables para cada mapa segun el archivo de etiquetas
