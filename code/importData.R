@@ -1,4 +1,4 @@
-# importar datos
+# importar los datos para unir los .xlsx con los .shp
 print('.....loading data')
 
 dataFile <- read_excel(pathFile$archivoDatos)

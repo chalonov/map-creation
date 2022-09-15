@@ -5,7 +5,7 @@ source("./code/loadLibraries.R")
 readFile <- read_excel('./data/map_variables.xlsx')
 
 for (i in readFile$item) {
-  # crea variables para cada mapa segun el archivo de etiquetas
+  # crea variables para cada mapa segun el archivo map_variables.xlsx
   pathFile = readFile[i,2]
   scopeArea = readFile[i,3]
   variableMap = readFile[i,4]

@@ -1,4 +1,4 @@
-# Cargar librerias
+# Carga las librerias necesarias
 
 library(pacman)
 pacman::p_load(raster, 

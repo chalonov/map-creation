@@ -1,6 +1,6 @@
 print('.....creating map')
 
-# Create maps
+# Crea un mapa para cada grupo de variables
 
 Sys.sleep(10)
 
